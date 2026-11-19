@@ -1,0 +1,24 @@
+{
+  "id": "/?app=wadeh",
+  "name": "واضح | WADEH",
+  "short_name": "واضح",
+  "description": "نموذج مصرفي رقمي تجريبي — كل شيء أوضح. جميع الأموال والعمليات افتراضية.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F9FC",
+  "theme_color": "#173A65",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["finance", "productivity"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "تحويل", "url": "/#/transfer", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "الالتزامات", "url": "/#/commitments", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

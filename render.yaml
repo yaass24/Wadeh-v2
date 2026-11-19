@@ -1,0 +1,17 @@
+# One-click deploy on Render (free plan): https://render.com → New → Blueprint → pick this repo.
+# Free instances sleep when idle and their disk is temporary: the demo database resets on restart (that's fine for a demo).
+services:
+  - type: web
+    name: wadeh
+    runtime: node
+    plan: free
+    buildCommand: echo "No build step needed"
+    startCommand: node --experimental-sqlite server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: TRUST_PROXY
+        value: "1"
+      - key: PUBLIC_URL
+        value: https://wadeh-lly2.onrender.com

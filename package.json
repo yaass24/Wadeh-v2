@@ -1,0 +1,19 @@
+{
+  "name": "wadeh-digital-banking-mvp",
+  "version": "3.4.0",
+  "description": "واضح | WADEH — Arabic-first digital banking PWA MVP (simulated money; real passkeys, Apple Calendar/CarPlay reminders and a home-screen balance widget).",
+  "private": true,
+  "homepage": "https://wadeh-lly2.onrender.com",
+  "repository": "github:yaass24/Wadeh-v2",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "check": "node tests/check-syntax.mjs",
+    "test": "node tests/check-syntax.mjs && node --test tests/api.test.js",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.50.0"
+  }
+}
