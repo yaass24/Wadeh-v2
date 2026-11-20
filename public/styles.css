@@ -39,7 +39,7 @@ button { cursor: pointer; -webkit-tap-highlight-color: transparent; }
   .shell.wide { max-width: 1180px; border-radius: 28px; }
 }
 .boot { min-height: 100dvh; display: grid; place-content: center; background: var(--navy); }
-.boot img { width: 200px; height: auto; }
+.boot img { width: clamp(220px, 24vw, 420px); height: auto; }
 
 /* ---------- headers ---------- */
 .hdr { display: flex; align-items: center; gap: 10px; min-height: 44px; }
@@ -118,9 +118,9 @@ button.item:active { transform: scale(.99); }
 .sync-toggle svg { width: 24px; height: 24px; }
 
 /* ---------- welcome / splash / login ---------- */
-.splash { min-height: 100dvh; background: var(--navy); display: grid; place-content: center; justify-items: center; gap: 30px; color: #fff; padding: 24px; }
-.splash img { width: 236px; height: auto; animation: rise .8s var(--ease) both; }
-.splash p { margin: 0; font-weight: 700; font-size: 19px; animation: rise .9s .15s var(--ease) both; }
+.splash { min-height: 100dvh; background: var(--navy); display: grid; place-content: center; justify-items: center; gap: clamp(30px, 3vw, 46px); color: #fff; padding: 24px; }
+.splash img { width: clamp(236px, 26vw, 460px); height: auto; animation: rise .8s var(--ease) both; }
+.splash p { margin: 0; font-weight: 700; font-size: clamp(19px, 1.9vw, 30px); animation: rise .9s .15s var(--ease) both; }
 .hero { background: var(--surface); border-radius: 28px; padding: 22px 18px 30px; text-align: center; }
 .hero h2 { margin: 0 0 22px; font-size: 22px; font-weight: 700; color: var(--ink); }
 .hero .mock-card { position: relative; margin: 0 auto; width: min(100%, 300px); aspect-ratio: 1.6; border-radius: 22px; background: var(--navy); }

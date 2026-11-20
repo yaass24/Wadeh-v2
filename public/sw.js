@@ -1,6 +1,6 @@
 /* WADEH service worker — caches the app shell only. API responses, calendar feeds and .ics files are never cached
    (financial data must always come fresh from the server). */
-const VERSION = 'wadeh-v3.4.0';
+const VERSION = 'wadeh-v3.5.0';
 const SHELL = [
   '/', '/index.html', '/styles.css', '/manifest.webmanifest',
   '/js/app.js', '/js/api.js', '/js/store.js', '/js/ui.js', '/js/webauthn.js', '/js/widget-script.js',
